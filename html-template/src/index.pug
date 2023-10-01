@@ -1,0 +1,20 @@
+extend ./template/_page.pug
+append value
+    - const title = "indexページのタイトル"
+    - const description = "indexページのディスクリプション"
+    - const path = "."
+
+//-mv
+block mainVisual
+    .main-visual.is-top
+        .main-visual__content
+            .main-visual__text トップページ
+
+block content
+    //-section
+    .section
+        .inner
+            h2.section__title セクション
+            .section__lead Section
+            .section__body
+                p トップページのコンテンツが入ります。

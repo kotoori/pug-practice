@@ -1,0 +1,24 @@
+-
+    const menus = [
+        {
+            name: "会社概要",
+            url: `${path}/company/index.html`
+        },
+        {
+            name: "お問い合わせ",
+            url: `${path}/contact/index.html`
+        },
+        {
+            name: "お知らせ2",
+            url: `${path}/news/index.html`
+        },
+    ];
+
+//-header
+header.header
+    .header__inner.inner
+        h1.header__logo
+            a(href=`${path}/index.html`) Logo2
+        nav.header__nav
+            each menu in menus
+                a.header__link(href=`${menu.url}`) #{menu.name}

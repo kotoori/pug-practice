@@ -1,0 +1,21 @@
+extend ../template/_page.pug
+append value
+    - const title = "会社概要｜DEMOサイト"
+    - const description = "会社概要のディスクリプション"
+    - const path = ".."
+
+
+//-mv
+block mainVisual
+    .main-visual
+        .main-visual__content
+            .main-visual__text 会社概要
+
+block content
+    //-section
+    .section
+        .inner
+            h2.section__title 会社概要
+            .section__lead Company
+            .section__body
+                p 会社概要のコンテンツが入ります。
