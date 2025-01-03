@@ -21,7 +21,7 @@ Pug
 function compilePug(){
 	return gulp.src("")
 	.pipe(pug())
-	.pipe(gulp("./dist"))
+	.pipe(gulp("./public"))
 }
 
 /*===============================
@@ -87,7 +87,7 @@ function compileSass(){
 		autoprefixer(),	//ベンダープレフィックス付与
 		cssSorter({order:"concentric-css"}), //cssソート
 	]))
-	.pipe(mmq())	//media queryをまとめる
+	// .pipe(mmq())	//media queryをまとめる
 	.pipe(gulp.dest("./public/assets/css"))	//圧縮前CSS出力
 	.pipe(cleanCss())
 	.pipe(rename({
