@@ -11,8 +11,18 @@ const rename = require("gulp-rename");	//ファイル名変更
 const uglify = require("gulp-uglify");	//JS圧縮
 const gulpIf = require("gulp-if");	//条件分岐
 const gulpIgnore = require("gulp-ignore");	//ファイル除外
+const pug = require("gulp-pug");	//Pug
 
 const browserSync = require("browser-sync");	//ブラウザ自動リロード
+
+/*===============================
+Pug
+===============================*/
+function compilePug(){
+	return gulp.src("")
+	.pipe(pug())
+	.pipe(gulp("./dist"))
+}
 
 /*===============================
 html
