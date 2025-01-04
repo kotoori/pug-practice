@@ -1,0 +1,31 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, width=device-width, initial-scale=1, shrink-to-fit=no")
+
+    ='\n'
+    title DEMOサイト
+    meta(name="description" content="トップページのディスクリプション")
+
+    ='\n'
+    //Font
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap", rel="stylesheet")
+
+    ='\n'
+    //CSS
+    link(rel="stylesheet", href="./assets/css/style.css")
+
+  ='\n'
+  body
+    header.header
+      .header__inner.inner
+        h1.header__logo
+          a(href="./index.html") Logo
+        nav.header__nav
+          ul.nav
+          a(href="./company/index.html") 会社概要
+          a(href="./contact/index.html") お問い合わせ
+    
